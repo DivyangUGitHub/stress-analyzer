@@ -1,207 +1,278 @@
  <div align="center">
 
-# STRESS ANALYZER
+<img src="https://img.shields.io/badge/PROJECT-01-FF3030?style=for-the-badge&labelColor=111111" alt="Project 01"/>
+
+# STRESS<br/>ANALYZER<span style="color:#FF3030">.</span>
 
 ### MEASURE. REFLECT. RESPOND.
 
-**A minimal, data-driven approach to understanding perceived stress.**
+**A Python-powered exploration of perceived stress and self-awareness.**
+
+Turning questionnaire responses into understandable scores, practical coping suggestions, and visual insights.
 
 <br/>
 
 <a href="https://github.com/DivyangUGitHub/stress-analyzer">
-  <img src="https://img.shields.io/badge/PYTHON-3.8%2B-111111?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/VIEW%20PROJECT-111111?style=for-the-badge&logo=github&logoColor=white" alt="View project"/>
 </a>
-<img src="https://img.shields.io/badge/DOMAIN-BEHAVIORAL%20PSYCHOLOGY-111111?style=flat-square" alt="Domain"/>
-<img src="https://img.shields.io/badge/STATUS-ACADEMIC%20PROJECT-111111?style=flat-square" alt="Status"/>
-<img src="https://img.shields.io/badge/LICENSE-MIT-111111?style=flat-square" alt="License"/>
+<img src="https://img.shields.io/badge/PYTHON-3.8%2B-FF3030?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/LICENSE-MIT-111111?style=for-the-badge" alt="MIT license"/>
 
 <br/><br/>
 
-[OVERVIEW](#-overview) · [FEATURES](#-features) · [METHODOLOGY](#-methodology) · [INSTALLATION](#-installation) · [ROADMAP](#-roadmap)
+[OVERVIEW](#01--overview) / [FEATURES](#02--features) / [DASHBOARD](#03--dashboard) / [METHODOLOGY](#04--methodology) / [GET STARTED](#05--get-started)
 
 <br/>
 
-</div>
-
----
-
-## 01 / OVERVIEW
-
-> **Stress is easy to experience. Harder to understand.**
-
-Stress Analyzer is a Python-based academic mini project that transforms the PSS-10 questionnaire into a structured self-awareness report, score visualization, and practical coping suggestions.
-
-Designed around clarity, reproducibility, and responsible interpretation.
+<img src="assets/dashboard.png" width="100%" alt="Stress Analyzer dashboard preview"/>
 
 <br/>
 
+<sub>ACADEMIC MINI PROJECT / BEHAVIORAL PSYCHOLOGY × SOFTWARE ENGINEERING</sub>
+
+</div>
+
+---
+
 <div align="center">
 
-|  PROJECT | DETAILS |
+## 01 — OVERVIEW
+
+### Understand the numbers behind the feeling.
+
+</div>
+
+Stress Analyzer is a Python-based mini project that uses the Perceived Stress Scale (PSS-10) questionnaire to calculate a perceived-stress score and provide educational feedback.
+
+It combines behavioral psychology concepts with input validation, numerical computation, automated reporting, and data visualization.
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+**01 / MEASURE**
+
+Collect ten questionnaire responses and validate every entry.
+
+</td>
+<td width="50%" valign="top">
+
+**02 / CALCULATE**
+
+Apply reverse scoring and calculate the total score.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**03 / INTERPRET**
+
+Display an illustrative project category and coping suggestions.
+
+</td>
+<td width="50%" valign="top">
+
+**04 / VISUALIZE**
+
+Generate a dashboard with score comparisons and simulated data.
+
+</td>
+</tr>
+</table>
+
+### Project information
+
+| ATTRIBUTE | DETAILS |
 |:--|:--|
-| **Category** | B.Tech CSE · Mini Project |
-| **Course** | Understanding Self for Effectiveness and Personality Development |
-| **Unit** | 04 — Stress and Coping Strategies |
-| **Assessment** | Perceived Stress Scale (PSS-10) |
-| **Language** | Python 3.8+ |
-| **Visualization** | Matplotlib |
-| **Output** | Console Report + PNG Dashboard |
-
-</div>
-
----
-
-## 02 / THE PROCESS
-
-<div align="center">
-
-<img src="assets/flowchart.png" width="100%" alt="Stress Analyzer workflow"/>
-
-</div>
-
-### From questionnaire to insight
-
-**01 — INPUT**  
-Collect ten responses, each between 0 and 4.
-
-**02 — VALIDATION**  
-Reject invalid entries and out-of-range values.
-
-**03 — SCORING**  
-Reverse-score positively phrased items 4, 5, 7, and 8.
-
-**04 — ANALYSIS**  
-Calculate the total score and normalized score index.
-
-**05 — FEEDBACK**  
-Present the project's descriptive category and coping suggestions.
-
-**06 — VISUALIZATION**  
-Generate a dashboard with score position and simulated group statistics.
+| Project | Stress Analyzer |
+| Degree | B.Tech Computer Science and Engineering |
+| Course | Understanding Self for Effectiveness and Personality Development |
+| Unit | 04 — Stress and Coping Strategies |
+| Questionnaire | PSS-10 |
+| Language | Python 3.8+ |
+| Visualization | Matplotlib |
+| Interface | Command-line application |
 
 ---
 
-## 03 / FEATURES
-
 <div align="center">
 
-| 01 / SCORING | 02 / VALIDATION |
+## 02 — FEATURES
+
+### Small application. Multiple layers of engineering.
+
+</div>
+
+| MODULE | CAPABILITIES |
 |:--|:--|
-| Automatic reverse scoring | Integer input from 0–4 |
-| Total score from 0–40 | Invalid input handling |
-| Normalized score index | Clear user prompts |
-
-| 03 / FEEDBACK | 04 / VISUAL ANALYTICS |
-|:--|:--|
-| Category-specific suggestions | Matplotlib dashboard |
-| Practical coping strategies | Score distribution |
-| Self-awareness focus | Simulated group comparison |
-
-</div>
-
----
-
-## 04 / DASHBOARD PREVIEW
+| **Input Engine** | Ten responses, range checks, invalid-input handling |
+| **Scoring Engine** | Reverse scoring and total score calculation |
+| **Feedback Engine** | Illustrative score categories and coping suggestions |
+| **Visualization Engine** | Score position, distribution and category-share charts |
+| **Testing** | Boundary cases and automated test script |
+| **Reporting** | Console report and PNG dashboard |
 
 <div align="center">
 
-<img src="assets/dashboard.png" width="100%" alt="Stress Analyzer data visualization dashboard"/>
-
-<sub>EXAMPLE DASHBOARD · SIMULATED COMPARISON DATA</sub>
+<img src="https://img.shields.io/badge/INPUT-VALIDATION-111111?style=flat-square" alt="Input validation"/>
+<img src="https://img.shields.io/badge/AUTOMATED-SCORING-FF3030?style=flat-square" alt="Automated scoring"/>
+<img src="https://img.shields.io/badge/DATA-VISUALIZATION-111111?style=flat-square" alt="Data visualization"/>
+<img src="https://img.shields.io/badge/TESTING-SUPPORTED-FF3030?style=flat-square" alt="Testing supported"/>
 
 </div>
 
-The dashboard is designed to make numerical results easier to understand at a glance.
+---
 
-- **Score position** — see the score on a 0–40 scale.
-- **Distribution** — compare against a simulated score distribution.
-- **Category share** — explore the proportions in the illustrative dataset.
+<div align="center">
+
+## 03 — DASHBOARD
+
+### From raw responses to visual information.
+
+</div>
+
+<div align="center">
+
+<img src="assets/console.png" width="90%" alt="Stress Analyzer console report"/>
+
+<sub>FIG. 01 / CONSOLE OUTPUT</sub>
+
+<br/><br/>
+
+<img src="assets/dashboard.png" width="100%" alt="Stress Analyzer analytics dashboard"/>
+
+<sub>FIG. 02 / DATA VISUALIZATION</sub>
+
+</div>
+
+**Dashboard components**
+
+- **Score position:** displays a score on the 0–40 scale.
+- **Score distribution:** compares the score with simulated observations.
+- **Category share:** visualizes the categories in the illustrative dataset.
+
+> **DATA NOTE**
+>
+> Comparison data is simulated. It is not collected from actual students and must not be presented as real-world research.
 
 ---
 
-## 05 / METHODOLOGY
+## 04 — METHODOLOGY
 
-### Reverse scoring
+### 4.1 / Reverse scoring
 
-For the positively phrased items 4, 5, 7, and 8:
+PSS-10 items 4, 5, 7 and 8 are positively phrased and require reverse scoring.
 
-```text
-Adjusted response = 4 − original response
+```python
+adjusted_response = 4 - original_response
 ```
 
-### Total score
+### 4.2 / Total score
 
 ```text
-PSS-10 = Sum of all 10 scored responses
-Range  = 0–40
+PSS-10 score = Sum of all 10 scored responses
+
+Minimum score = 0
+Maximum score = 40
 ```
 
-### Normalized score index
+Higher scores indicate greater perceived stress.
+
+### 4.3 / Normalized index
 
 ```text
-Index (%) = (PSS-10 / 40) × 100
+Index (%) = (PSS-10 score / 40) × 100
 ```
 
-### Illustrative score categories
+This percentage expresses the score relative to the scale's maximum. It is not a probability, diagnosis, or clinical severity measure.
 
-| SCORE | CATEGORY |
+### 4.4 / Illustrative categories
+
+| SCORE RANGE | PROJECT CATEGORY |
 |:--:|:--|
 | 0–13 | LOW |
 | 14–26 | MODERATE |
 | 27–40 | HIGH |
 
-These categories are configurable project conventions, not universal clinical thresholds. The PSS-10 measures perceived stress and is not a diagnostic test.
+These categories are project-defined for demonstration and are not universal clinical cutoffs.
 
-Selye's alarm, resistance, and exhaustion stages are a separate theoretical framework and cannot be reliably inferred from the PSS-10 total alone.
+### 4.5 / Example calculation
+
+Input:
+
+```text
+2, 2, 3, 2, 2, 3, 2, 2, 2, 3
+```
+
+Result:
+
+| METRIC | RESULT |
+|:--|--:|
+| Total score | 23 / 40 |
+| Normalized index | 57.5% |
+| Illustrative category | MODERATE |
+
+The positive-item responses in this example are all 2, so their reversed values remain 2.
+
+**Scientific distinction:** Selye's alarm, resistance, and exhaustion stages are part of a separate theoretical framework. They cannot be inferred reliably from the PSS-10 total score alone.
 
 ---
 
-## 06 / INSTALLATION
+## 05 — GET STARTED
 
-### Prerequisites
+### Requirements
 
-- Python 3.8+
-- pip
+- Python 3.8 or later
 - Git
+- pip
 
-### Clone the repository
+### Installation
+
+**Step 01 / Clone the repository**
 
 ```bash
 git clone https://github.com/DivyangUGitHub/stress-analyzer.git
-
 cd stress-analyzer
 ```
 
-### Install dependencies
+**Step 02 / Install dependencies**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the application
+**Step 03 / Run the application**
 
 ```bash
 python stress_analyzer.py
 ```
 
-### Run tests
+**Step 04 / Run tests**
 
 ```bash
 python tests.py
 ```
 
-The application prints a console report and generates `dashboard.png` when execution completes successfully.
+Answer each questionnaire prompt with a whole number between `0` and `4`.
+
+The program is intended to print a console report and save a dashboard image when execution completes successfully.
 
 ---
 
-## 07 / PROJECT STRUCTURE
+## 06 — ARCHITECTURE
 
 ```text
 stress-analyzer/
 │
 ├── stress_analyzer.py
+│   └── Questionnaire, scoring and reporting
+│
 ├── tests.py
+│   └── Automated tests and boundary cases
+│
 ├── requirements.txt
+│   └── Project dependencies
 │
 ├── assets/
 │   ├── console.png
@@ -215,39 +286,47 @@ stress-analyzer/
 └── README.md
 ```
 
+Ensure that the listed files exist in the repository before relying on the structure or image previews.
+
 ---
 
-## 08 / ROADMAP
+## 07 — ROADMAP
+
+Future development opportunities:
 
 - [ ] Interactive web interface
-- [ ] Tkinter desktop interface
+- [ ] Desktop interface using Tkinter
 - [ ] Optional local score history
-- [ ] Guided breathing timer
+- [ ] Guided breathing exercise timer
 - [ ] Exportable personal reports
-- [ ] Accessible interface and keyboard navigation
-- [ ] Anonymous group analytics with appropriate consent
+- [ ] Accessibility improvements
+- [ ] Privacy-conscious group analytics
+- [ ] Evaluation with consenting participants and appropriate research safeguards
 
 ---
 
-## 09 / ETHICS & LIMITATIONS
+## 08 — RESPONSIBLE USE
 
 <div align="center">
 
-**SELF-AWARENESS TOOL · NOT A MEDICAL DIAGNOSIS**
+<img src="https://img.shields.io/badge/IMPORTANT-EDUCATIONAL%20TOOL-FF3030?style=for-the-badge" alt="Educational tool"/>
+
+### SELF-AWARENESS, NOT DIAGNOSIS.
 
 </div>
 
-- Results are based on self-reported answers.
-- Score categories are illustrative project settings.
-- Comparison data is simulated, not real student research.
+- The PSS-10 measures perceived stress; it does not diagnose a mental health condition.
+- Results depend on self-reported responses.
+- The project's score categories are illustrative.
+- Simulated group statistics are not evidence about a real population.
 - Personal responses should be handled with appropriate privacy safeguards.
-- Persistent distress may warrant support from a qualified mental health professional.
+- People experiencing persistent distress may benefit from speaking with a qualified mental health professional.
 
 ---
 
-## 10 / REFERENCES
+## 09 — REFERENCES
 
-1. Cohen, S., Kamarck, T., & Mermelstein, R. (1983). *A global measure of perceived stress.* Journal of Health and Social Behavior, 24(4), 385–396.
+1. Cohen, S., Kamarck, T., & Mermelstein, R. (1983). A global measure of perceived stress. *Journal of Health and Social Behavior*, 24(4), 385–396.
 2. Selye, H. (1956). *The Stress of Life.* McGraw-Hill.
 3. Lazarus, R. S., & Folkman, S. (1984). *Stress, Appraisal, and Coping.* Springer.
 
@@ -255,28 +334,30 @@ stress-analyzer/
 
 <div align="center">
 
-### BUILT FOR SELF-AWARENESS.
+<img src="https://img.shields.io/badge/BUILT%20WITH-PYTHON-111111?style=flat-square&logo=python&logoColor=white" alt="Built with Python"/>
+<img src="https://img.shields.io/badge/DESIGNED%20FOR-SELF--AWARENESS-FF3030?style=flat-square" alt="Designed for self-awareness"/>
+
+<br/><br/>
+
+# MEASURE.<br/>REFLECT.<br/>RESPOND.
 
 **STRESS ANALYZER / 2026**
 
-<sub>B.Tech Computer Science and Engineering</sub>
-
-<sub>SRM Institute of Science and Technology · NCR Campus</sub>
+B.Tech Computer Science and Engineering  
+SRM Institute of Science and Technology · NCR Campus
 
 <br/>
 
-**AUTHOR:** [Your Name]  
-**ROLL NUMBER:** [Your Roll Number]  
-**SUPERVISOR:** Mr. A. Kathiresan
+**AUTHOR:** Divyang Upreti  
 
 <br/>
 
 <a href="https://github.com/DivyangUGitHub">
-  <img src="https://img.shields.io/badge/GITHUB-DivyangUGitHub-111111?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile"/>
+  <img src="https://img.shields.io/badge/EXPLORE%20GITHUB-111111?style=for-the-badge&logo=github&logoColor=white" alt="Explore GitHub"/>
 </a>
 
 <br/><br/>
 
-<sub>MEASURE. REFLECT. RESPOND.</sub>
+<sub>AN ACADEMIC PROJECT AT THE INTERSECTION OF SOFTWARE ENGINEERING AND BEHAVIORAL PSYCHOLOGY.</sub>
 
 </div>
